@@ -52,6 +52,7 @@ app.post("/students", (req, res) => {
 	};
 });
 {
+	console.log("hello");
 	students.push(student);
 	const response = {
 		success: true,
@@ -61,7 +62,9 @@ app.post("/students", (req, res) => {
 	};
 	res.json(response);
 }
-
+app.get("/", (req, res) => {
+	res.json(students);
+});
 app.listen(3000, () => {
 	console.log("server is running");
 });
