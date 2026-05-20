@@ -39,6 +39,9 @@ const students = [
     gender: "Female",
   },
 ];
+app.get('/', (req, res) => {
+    res.json(students);
+});
 app.listen(3000, () => {
   console.log("server is running");
 });
