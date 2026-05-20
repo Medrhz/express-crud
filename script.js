@@ -1,2 +1,2 @@
 let btn = document.getElementById("btn");
-btn.onclick(console.log("hello world"));
+btn.onclick = () => console.log("hello world");
